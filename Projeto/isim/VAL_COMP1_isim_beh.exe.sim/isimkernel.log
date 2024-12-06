@@ -1,0 +1,29 @@
+Command line:
+   VAL_COMP1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  50035
+
+Sat Nov 09 02:34:39 2024
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 666.436 Meg
+
+ Total Signals          : 14
+ Total Nets             : 23
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 108
+Total Line Count : 49
+
+ Total Simulation Time: 0.015625 sec
+
+ Current Memory Usage: 666.436 Meg
+
+Sat Nov 09 02:34:43 2024
+

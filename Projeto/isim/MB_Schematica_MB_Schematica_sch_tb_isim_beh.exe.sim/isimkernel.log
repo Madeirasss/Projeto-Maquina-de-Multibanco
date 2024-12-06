@@ -1,0 +1,29 @@
+Command line:
+   MB_Schematica_MB_Schematica_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50083
+
+Sat Nov 09 03:16:53 2024
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 666.464 Meg
+
+ Total Signals          : 51
+ Total Nets             : 95
+ Total Signal Drivers   : 24
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 30
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 263
+Total Line Count : 275
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 666.464 Meg
+
+Sat Nov 09 03:17:09 2024
+
