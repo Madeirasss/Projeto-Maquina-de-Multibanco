@@ -1,0 +1,14 @@
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.v -lang verilog -prj ProjetoSD -o BCD_converter.spl -module BCD_converter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 BCD_converter.spl C:/Users/quim/Desktop/PLS/ProjetoSD/BCD_converter.sym 

@@ -1,0 +1,6 @@
+verilog work "VAL_COMP1.v"
+verilog work "MB.v"
+verilog work "BCD_converter.v"
+verilog work "MB_Schematica.vf"
+verilog work "MB_FINAL.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

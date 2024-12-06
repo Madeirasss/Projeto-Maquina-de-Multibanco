@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MB_Schematica_drc.vf
+// /___/   /\     Timestamp : 11/09/2024 01:02:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family artix7 -verilog MB_Schematica_drc.vf -w C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch
+//Design Name: MB_Schematica
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MB_Schematica(COD, 
+                     EN, 
+                     PIN, 
+                     SALDO, 
+                     VAL, 
+                     COD_OUT, 
+                     ECRA_OUT, 
+                     PAR_OUT, 
+                     SALDO_OUT, 
+                     VAL_OUT);
+
+    input [4:0] COD;
+    input EN;
+    input [3:0] PIN;
+    input [3:0] SALDO;
+    input [3:0] VAL;
+   output [5:0] COD_OUT;
+   output [5:0] ECRA_OUT;
+   output PAR_OUT;
+   output [4:0] SALDO_OUT;
+   output [4:0] VAL_OUT;
+   
+   wire [3:0] XLXN_1;
+   wire [3:0] XLXN_32;
+   wire [3:0] XLXN_33;
+   wire [4:0] XLXN_34;
+   wire [4:0] XLXN_35;
+   
+endmodule

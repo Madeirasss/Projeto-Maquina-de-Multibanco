@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Funciona.ngc Funciona.ngd  
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/Funciona.syr" 

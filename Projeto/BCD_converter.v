@@ -1,0 +1,253 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    11:09:12 10/25/2024 
+// Design Name: 
+// Module Name:    BCD_converter 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module BCD_converter(ECRA,SALDO,VAL,COD,SALDO_BCD0,SALDO_BCD1,VAL_BCD0,VAL_BCD1,ECRA_BCD0,ECRA_BCD1,COD_BCD0,COD_BCD1);
+
+output SALDO_BCD0,SALDO_BCD1,VAL_BCD0,VAL_BCD1,ECRA_BCD0,ECRA_BCD1,COD_BCD0,COD_BCD1;
+
+input [4:0] SALDO,VAL;
+input [5:0] COD,ECRA;
+	
+reg [3:0] SALDO_BCD0,SALDO_BCD1,VAL_BCD0,VAL_BCD1,ECRA_BCD0,ECRA_BCD1,COD_BCD0,COD_BCD1;	
+		
+always@(ECRA or COD or SALDO or VAL)
+	begin
+				
+		case (SALDO)
+			5'b00000: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0000}; // 0
+			5'b00001: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0001}; // 1
+			5'b00010: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0010}; // 2
+			5'b00011: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0011}; // 3
+			5'b00100: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0100}; // 4
+			5'b00101: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0101}; // 5
+			5'b00110: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0110}; // 6
+			5'b00111: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0111}; // 7
+			5'b01000: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b1000}; // 8
+			5'b01001: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b1001}; // 9
+			5'b01010: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0000}; // 10
+			5'b01011: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0001}; // 11
+			5'b01100: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0010}; // 12
+			5'b01101: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0011}; // 13
+			5'b01110: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0100}; // 14
+			5'b01111: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0101}; // 15
+			
+			5'b11110: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0110}; // 16
+			5'b11101: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b0111}; // 17
+			5'b11100: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b1000}; // 18
+			5'b11011: {SALDO_BCD1, SALDO_BCD0} = {4'b0001, 4'b1001}; // 19
+			5'b11010: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0000}; // 20
+			5'b11001: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0001}; // 21
+			5'b11000: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0010}; // 22
+			5'b10111: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0011}; // 23
+			5'b10110: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0100}; // 24
+			5'b10101: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0101}; // 25
+			5'b10100: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0110}; // 26
+			5'b10011: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b0111}; // 27
+			5'b10010: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b1000}; // 28
+			5'b10001: {SALDO_BCD1, SALDO_BCD0} = {4'b0010, 4'b1001}; // 29
+			5'b10000: {SALDO_BCD1, SALDO_BCD0} = {4'b0011, 4'b0000}; // 30
+			5'b11111: {SALDO_BCD1, SALDO_BCD0} = {4'b0011, 4'b0001}; // 31
+			default: {SALDO_BCD1, SALDO_BCD0} = {4'b0000, 4'b0000}; // Default case
+		endcase
+				
+		case (VAL)
+			5'b00000: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0000}; // 0
+			5'b00001: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0001}; // 1
+			5'b00010: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0010}; // 2
+			5'b00011: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0011}; // 3
+			5'b00100: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0100}; // 4
+			5'b00101: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0101}; // 5
+			5'b00110: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0110}; // 6
+			5'b00111: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0111}; // 7
+			5'b01000: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b1000}; // 8
+			5'b01001: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b1001}; // 9
+			5'b01010: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0000}; // 10
+			5'b01011: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0001}; // 11
+			5'b01100: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0010}; // 12
+			5'b01101: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0011}; // 13
+			5'b01110: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0100}; // 14
+			5'b01111: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0101}; // 15
+			
+			5'b11110: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0110}; // 16
+			5'b11101: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b0111}; // 17
+			5'b11100: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b1000}; // 18
+			5'b11011: {VAL_BCD1, VAL_BCD0} = {4'b0001, 4'b1001}; // 19
+			5'b11010: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0000}; // 20
+			5'b11001: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0001}; // 21
+			5'b11000: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0010}; // 22
+			5'b10111: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0011}; // 23
+			5'b10110: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0100}; // 24
+			5'b10101: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0101}; // 25
+			5'b10100: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0110}; // 26
+			5'b10011: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b0111}; // 27
+			5'b10010: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b1000}; // 28
+			5'b10001: {VAL_BCD1, VAL_BCD0} = {4'b0010, 4'b1001}; // 29
+			5'b10000: {VAL_BCD1, VAL_BCD0} = {4'b0011, 4'b0000}; // 30
+			5'b11111: {VAL_BCD1, VAL_BCD0} = {4'b0011, 4'b0001}; // 31
+			default: {VAL_BCD1, VAL_BCD0} = {4'b0000, 4'b0000}; // Default case
+		endcase
+
+		
+		case(COD)
+			6'b000000: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0101}; // 5
+			6'b000001: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0110}; // 6
+			6'b000010: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0111}; // 7
+			6'b000011: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b1000}; // 8
+			6'b000100: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b1001}; // 9
+			6'b000101: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0000}; // 10
+			6'b000110: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0001}; // 11
+			6'b000111: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0010}; // 12
+			6'b001000: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0011}; // 13
+			6'b001001: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0100}; // 14
+			6'b001010: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0101}; // 15
+			6'b001011: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0110}; // 16
+			6'b001100: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0111}; // 17
+			6'b001101: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b1000}; // 18
+			6'b001110: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b1001}; // 19
+			6'b001111: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0000}; // 20
+			6'b010000: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0001}; // 21
+			6'b010001: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0010}; // 22
+			6'b010010: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0011}; // 23
+			6'b010011: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0100}; // 24
+			6'b010100: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0101}; // 25
+			6'b010101: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0110}; // 26
+			6'b010110: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0111}; // 27
+			6'b010111: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b1000}; // 28
+			6'b011000: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b1001}; // 29
+			6'b011001: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0000}; // 30
+			6'b011010: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0001}; // 31
+			6'b011011: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0010}; // 32
+			6'b011100: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0011}; // 33
+			6'b011101: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0100}; // 34
+			6'b011110: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0101}; // 35
+			6'b011111: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0110}; // 36
+
+			6'b111111: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0100}; // 4
+			6'b111110: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0011}; // 3
+			6'b111101: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0010}; // 2
+			6'b111100: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0001}; // 1
+			6'b111011: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0000}; // 0
+			6'b111010: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0001}; // -1
+			6'b111001: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0010}; // -2
+			6'b111000: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0011}; // -3
+			6'b110111: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0100}; // -4
+			6'b110110: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0101}; // -5
+			6'b110101: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0110}; // -6
+			6'b110100: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0111}; // -7
+			6'b110011: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b1000}; // -8
+			6'b110010: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b1001}; // -9
+			6'b110001: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0000}; // -10
+			6'b110000: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0001}; // -11
+			6'b101111: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0010}; // -12
+			6'b101110: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0011}; // -13
+			6'b101101: {COD_BCD1, COD_BCD0} = {4'b0001, 4'b0100}; // -14
+			6'b101100: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0101}; // -15
+			6'b101011: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0110}; // -16
+			6'b101010: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0111}; // -17
+			6'b101001: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b1000}; // -18
+			6'b101000: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b1001}; // -19
+			6'b100111: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0000}; // -20
+			6'b100110: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0001}; // -21
+			6'b100101: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0010}; // -22
+			6'b100100: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0011}; // -23
+			6'b100011: {COD_BCD1, COD_BCD0} = {4'b0010, 4'b0100}; // -24
+			6'b100010: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0101}; // -25
+			6'b100001: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0110}; // -26
+			6'b100000: {COD_BCD1, COD_BCD0} = {4'b0011, 4'b0111}; // -27
+			
+			default: {COD_BCD1, COD_BCD0} = {4'b0000, 4'b0000}; // Default case
+		endcase
+			
+		case (ECRA)
+			6'b000000: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0000}; // 0
+			6'b000001: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0001}; // 1
+			6'b000010: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0010}; // 2
+			6'b000011: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0011}; // 3
+			6'b000100: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0100}; // 4
+			6'b000101: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0101}; // 5
+			6'b000110: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0110}; // 6
+			6'b000111: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0111}; // 7
+			6'b001000: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b1000}; // 8
+			6'b001001: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b1001}; // 9
+			6'b001010: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0000}; // 10
+			6'b001011: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0001}; // 11
+			6'b001100: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0010}; // 12
+			6'b001101: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0011}; // 13
+			6'b001110: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0100}; // 14
+			6'b001111: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0101}; // 15
+			6'b010000: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0110}; // 16
+			6'b010001: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0111}; // 17
+			6'b010010: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b1000}; // 18
+			6'b010011: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b1001}; // 19
+			6'b010100: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0000}; // 20
+			6'b010101: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0001}; // 21
+			6'b010110: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0010}; // 22
+			6'b010111: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0011}; // 23
+			6'b011000: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0100}; // 24
+			6'b011001: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0101}; // 25
+			6'b011010: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0110}; // 26
+			6'b011011: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0111}; // 27
+			6'b011100: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b1000}; // 28
+			6'b011101: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b1001}; // 29
+			6'b011110: {ECRA_BCD1, ECRA_BCD0} = {4'b0011, 4'b0000}; // 30
+			6'b011111: {ECRA_BCD1, ECRA_BCD0} = {4'b0011, 4'b0001}; // 31
+
+			6'b111111: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0001}; // -1
+			6'b111110: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0010}; // -2
+			6'b111101: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0011}; // -3
+			6'b111100: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0100}; // -4
+			6'b111011: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0101}; // -5
+			6'b111010: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0110}; // -6
+			6'b111001: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0111}; // -7
+			6'b111000: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b1000}; // -8
+			6'b110111: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b1001}; // -9
+			6'b110110: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0000}; // -10
+			6'b110101: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0001}; // -11
+			6'b110100: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0010}; // -12
+			6'b110011: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0011}; // -13
+			6'b110010: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0100}; // -14
+			6'b110001: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0101}; // -15
+			6'b110000: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0110}; // -16
+			6'b101111: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b0111}; // -17
+			6'b101110: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b1000}; // -18
+			6'b101101: {ECRA_BCD1, ECRA_BCD0} = {4'b0001, 4'b1001}; // -19
+			6'b101100: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0000}; // -20
+			6'b101011: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0001}; // -21
+			6'b101010: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0010}; // -22
+			6'b101001: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0011}; // -23
+			6'b101000: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0100}; // -24
+			6'b100111: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0101}; // -25
+			6'b100110: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0110}; // -26
+			6'b100101: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b0111}; // -27
+			6'b100100: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b1000}; // -28
+			6'b100011: {ECRA_BCD1, ECRA_BCD0} = {4'b0010, 4'b1001}; // -29
+			6'b100010: {ECRA_BCD1, ECRA_BCD0} = {4'b0011, 4'b0000}; // -30
+			6'b100001: {ECRA_BCD1, ECRA_BCD0} = {4'b0011, 4'b0001}; // -31
+			6'b100000: {ECRA_BCD1, ECRA_BCD0} = {4'b0011, 4'b0010}; // -32
+
+
+			default: {ECRA_BCD1, ECRA_BCD0} = {4'b0000, 4'b0000}; // Default case
+		endcase
+
+
+
+	end
+
+endmodule

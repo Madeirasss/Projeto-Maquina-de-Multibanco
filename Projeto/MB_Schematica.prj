@@ -1,0 +1,4 @@
+verilog work "VAL_COMP1.v"
+verilog work "MB.v"
+verilog work "BCD_converter.v"
+verilog work "MB_Schematica.vf"

@@ -1,0 +1,10 @@
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.v -lang verilog -prj ProjetoSD -o VAL_COMP1.spl -module VAL_COMP1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 VAL_COMP1.spl C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.v -lang verilog -prj ProjetoSD -o VAL_COMP1.spl -module VAL_COMP1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 VAL_COMP1.spl C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.v -lang verilog -prj ProjetoSD -o VAL_COMP1.spl -module VAL_COMP1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 VAL_COMP1.spl C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.v -lang verilog -prj ProjetoSD -o VAL_COMP1.spl -module VAL_COMP1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 VAL_COMP1.spl C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.sym 
+vhdtdtfi -lib work C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.v -lang verilog -prj ProjetoSD -o VAL_COMP1.spl -module VAL_COMP1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 VAL_COMP1.spl C:/Users/quim/Desktop/PLS/ProjetoSD/VAL_COMP1.sym 

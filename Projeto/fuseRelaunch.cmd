@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica_MB_Schematica_sch_tb_isim_beh.exe" -prj "C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica_MB_Schematica_sch_tb_beh.prj" "work.MB_Schematica_MB_Schematica_sch_tb" "work.glbl" 

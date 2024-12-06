@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ProjetoSD.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BCD_converter.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="BCD_converter.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BCD_converter.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BCD_converter.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="BCD_converter.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BCD_converter_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Funciona.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Funciona.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Funciona.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Funciona.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Funciona.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Funciona.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Funciona.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Funciona.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Funciona.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Funciona_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Funciona_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Funciona_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Funciona_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Funciona_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Funciona_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="JustWork_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="JustWork_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MB.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="MB.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MB.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MB.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MB.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MB_Schematica.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="MB_Schematica.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MB_Schematica.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MB_Schematica.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MB_Schematica.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MB_Schematica.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MB_Schematica.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MB_Schematica.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MB_Schematica.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MB_Schematica.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MB_Schematica.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MB_Schematica_drc.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MB_Schematica_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MB_Schematica_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MB_Schematica_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MB_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestMB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestMB_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VAL_COMP1.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="VAL_COMP1.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="VAL_COMP1.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="VAL_COMP1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="VAL_COMP1.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="VAL_COMP1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VAL_COMP1_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1731121582" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1731121582">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1731122088" xil_pn:in_ck="7134670577023728889" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1731122088">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BCD_converter.v"/>
+      <outfile xil_pn:name="MB.v"/>
+      <outfile xil_pn:name="MB_FINAL.v"/>
+      <outfile xil_pn:name="VAL_COMP1.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1731122209" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5618382007700726463" xil_pn:start_ts="1731122209">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1731122210" xil_pn:in_ck="-8313903955649858676" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2988027521528110625" xil_pn:start_ts="1731122209">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MB_Schematica.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1731120088" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="191754411219844125" xil_pn:start_ts="1731120088">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1731122210" xil_pn:in_ck="-9108759939744766013" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1731122210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BCD_converter.v"/>
+      <outfile xil_pn:name="MB.v"/>
+      <outfile xil_pn:name="MB_FINAL.v"/>
+      <outfile xil_pn:name="MB_Schematica.vf"/>
+      <outfile xil_pn:name="VAL_COMP1.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1731122212" xil_pn:in_ck="-9108759939744766013" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4052424838858292520" xil_pn:start_ts="1731122210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1731122212" xil_pn:in_ck="7859352332542551237" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3641218745672368539" xil_pn:start_ts="1731122212">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1729898546" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1729898546">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1731119757" xil_pn:in_ck="-8313903955649858676" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="461749934156481678" xil_pn:start_ts="1731119756">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MB_Schematica.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1731115273" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="191754411219844125" xil_pn:start_ts="1731115273">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1729898546" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1729898546">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1731115273" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1715184921163266416" xil_pn:start_ts="1731115273">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1729898546" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1729898546">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1731119757" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5751907137306626841" xil_pn:start_ts="1731119757">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1731119767" xil_pn:in_ck="2651877552457808775" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-735479256969504173" xil_pn:start_ts="1731119757">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MB_Schematica.jhd"/>
+      <outfile xil_pn:name="MB_Schematica.lso"/>
+      <outfile xil_pn:name="MB_Schematica.ngc"/>
+      <outfile xil_pn:name="MB_Schematica.ngr"/>
+      <outfile xil_pn:name="MB_Schematica.prj"/>
+      <outfile xil_pn:name="MB_Schematica.stx"/>
+      <outfile xil_pn:name="MB_Schematica.syr"/>
+      <outfile xil_pn:name="MB_Schematica.xst"/>
+      <outfile xil_pn:name="MB_Schematica_MB_Schematica_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="MB_Schematica_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1729898560" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892279589256405" xil_pn:start_ts="1729898560">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1729900946" xil_pn:in_ck="3722391317685399513" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8242904239021628575" xil_pn:start_ts="1729900937">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

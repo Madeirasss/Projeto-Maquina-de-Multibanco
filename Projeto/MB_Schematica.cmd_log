@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family artix7 -refsym MB_Schematica C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sym 
+sch2hdl -intstyle ise -family artix7 -verilog MB_Schematica_drc.vf -w C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch 
+sch2hdl -intstyle ise -family artix7 -verilog MB_Schematica_drc.vf -w C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch 
+sch2sym -intstyle ise -family artix7 -refsym MB_Schematica C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sym 
+sch2hdl -intstyle ise -family artix7 -verilog MB_Schematica_drc.vf -w C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch 
+xst -intstyle ise -ifn "C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.xst" -ofn "C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.syr" 

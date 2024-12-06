@@ -1,0 +1,83 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MB_Schematica.vf
+// /___/   /\     Timestamp : 11/09/2024 03:16:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.vf -w C:/Users/quim/Desktop/PLS/ProjetoSD/MB_Schematica.sch
+//Design Name: MB_Schematica
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MB_Schematica(COD, 
+                     EN, 
+                     PIN, 
+                     SALDO, 
+                     VAL, 
+                     COD_OUT0, 
+                     COD_OUT1, 
+                     ECRA_OUT0, 
+                     ECRA_OUT1, 
+                     PAR_OUT, 
+                     SALDO_OUT0, 
+                     SALDO_OUT1, 
+                     VAL_OUT0, 
+                     VAL_OUT1);
+
+    input [5:0] COD;
+    input EN;
+    input [4:0] PIN;
+    input [4:0] SALDO;
+    input [4:0] VAL;
+   output [3:0] COD_OUT0;
+   output [3:0] COD_OUT1;
+   output [3:0] ECRA_OUT0;
+   output [3:0] ECRA_OUT1;
+   output PAR_OUT;
+   output [3:0] SALDO_OUT0;
+   output [3:0] SALDO_OUT1;
+   output [3:0] VAL_OUT0;
+   output [3:0] VAL_OUT1;
+   
+   wire [4:0] XLXN_76;
+   wire [4:0] XLXN_77;
+   wire [5:0] XLXN_78;
+   wire [5:0] XLXN_79;
+   wire [4:0] XLXN_84;
+   
+   BCD_converter  XLXI_5 (.COD(XLXN_79[5:0]), 
+                         .ECRA(XLXN_78[5:0]), 
+                         .SALDO(XLXN_77[4:0]), 
+                         .VAL(XLXN_76[4:0]), 
+                         .COD_BCD0(COD_OUT0[3:0]), 
+                         .COD_BCD1(COD_OUT1[3:0]), 
+                         .ECRA_BCD0(ECRA_OUT0[3:0]), 
+                         .ECRA_BCD1(ECRA_OUT1[3:0]), 
+                         .SALDO_BCD0(SALDO_OUT0[3:0]), 
+                         .SALDO_BCD1(SALDO_OUT1[3:0]), 
+                         .VAL_BCD0(VAL_OUT0[3:0]), 
+                         .VAL_BCD1(VAL_OUT1[3:0]));
+   VAL_COMP1  XLXI_6 (.VAL(VAL[4:0]), 
+                     .VAL_COMP1(XLXN_84[4:0]));
+   MB  XLXI_7 (.COD(COD[5:0]), 
+              .EN(EN), 
+              .PIN(PIN[4:0]), 
+              .SALDO(SALDO[4:0]), 
+              .VAL(XLXN_84[4:0]), 
+              .COD_OUT(XLXN_79[5:0]), 
+              .ECRA(XLXN_78[5:0]), 
+              .PAR(PAR_OUT), 
+              .SALDO_OUT(XLXN_77[4:0]), 
+              .VAL_OUT(XLXN_76[4:0]));
+endmodule
